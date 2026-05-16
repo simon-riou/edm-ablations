@@ -1,0 +1,5 @@
+{
+  "python.defaultInterpreterPath": "C:/Users/simon/miniconda3/envs/env/python.exe",
+  "python.analysis.extraPaths": ["./src", "./third_party/edm", "./third_party/k-diffusion"],
+  "cSpell.enabled": false
+}

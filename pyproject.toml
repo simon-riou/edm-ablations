@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "edm-ablations"
+version = "0.1.0"
+requires-python = ">=3.8,<3.10"
+dependencies = [
+    "torch",
+    "torchvision",
+    "numpy",
+    "scipy",
+    "pyyaml",
+    "click",
+    "tqdm",
+    "einops",
+    "clean-fid",
+    "pillow",
+    "wandb",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "ruff",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+exclude = ["third_party"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["slow: marks tests as slow (deselect with -m 'not slow')"]

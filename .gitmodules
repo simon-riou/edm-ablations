@@ -1,0 +1,6 @@
+[submodule "third_party/edm"]
+	path = third_party/edm
+	url = https://github.com/NVlabs/edm
+[submodule "third_party/k-diffusion"]
+	path = third_party/k-diffusion
+	url = https://github.com/crowsonkb/k-diffusion
